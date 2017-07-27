@@ -1,0 +1,4 @@
+./obj/local/x86_64/objs/hello-jni/hello-jni.o: jni/hello-jni.cpp \
+  jni/com_su_androidsample_MainActivity.h
+
+jni/com_su_androidsample_MainActivity.h:
