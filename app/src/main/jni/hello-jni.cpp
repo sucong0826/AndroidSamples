@@ -5,5 +5,8 @@
 #include "com_su_androidsample_MainActivity.h"
 
 JNIEXPORT jstring JNICALL Java_com_su_androidsample_MainActivity_stringFromJNI(JNIEnv* env, jobject thiz) {
-    return (*env).NewStringUTF("Hello Jni!");
+    jclass clz = env -> GetObjectClass(thiz);
+    jmethodID mid = env -> GetMethodID(clz, "count", "(I)V");
+    env -> CallVoidMethod(thiz, mid, 10);
+    return (*env).NewStringUTF("Hello Su!");
 }
