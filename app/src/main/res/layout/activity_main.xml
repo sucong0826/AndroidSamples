@@ -22,9 +22,14 @@
         android:id="@+id/bb_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/bouncing_balls"
-        tools:layout_editor_absoluteX="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:text="@string/bouncing_balls"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/myBookListTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </android.support.constraint.ConstraintLayout>
